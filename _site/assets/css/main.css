@@ -497,49 +497,29 @@ h1, h2, h3, h4, h5, h6, p, nav {
       width: 200px;
       position: relative; }
       #about-nav .nav-container a:hover .nav-img1 {
-        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav1.png) no-repeat;
-        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav1.png) no-repeat;
-        background-size: cover;
+        background-size: 140%;
         height: 200px;
         width: 200px;
         border-radius: 50%;
         border: 3px solid white; }
       #about-nav .nav-container a:hover .nav-img2 {
-        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav2.png) no-repeat;
-        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav2.png) no-repeat;
-        background-size: cover;
+        background-size: 110%;
         height: 200px;
         width: 200px;
         border-radius: 50%;
         border: 3px solid white; }
       #about-nav .nav-container a:hover .nav-img3 {
-        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav3.png) no-repeat;
-        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav3.png) no-repeat;
-        background-size: cover;
+        background-size: 170%;
         height: 200px;
         width: 200px;
         border-radius: 50%;
         border: 3px solid white; }
       #about-nav .nav-container a:hover .nav-img4 {
-        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav4.png) no-repeat;
-        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav4.png) no-repeat;
-        background-size: cover;
+        background-size: 110%;
         height: 200px;
         width: 200px;
         border-radius: 50%;
         border: 3px solid white; }
-      #about-nav .nav-container a:hover .nav-img5 {
-        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav5.png) no-repeat;
-        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav5.png) no-repeat;
-        background-size: cover;
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        border: 3px solid white; }
-      #about-nav .nav-container a:hover span {
-        -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05); }
       #about-nav .nav-container a span {
         position: absolute;
         top: 50%;
@@ -547,9 +527,7 @@ h1, h2, h3, h4, h5, h6, p, nav {
         display: inline-block;
         font-size: 20px;
         font-weight: 800;
-        color: white;
-        -webkit-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s; }
+        color: white; }
     #about-nav .nav-container .nav-title1 {
       margin-left: -50px;
       margin-top: -13px; }
@@ -563,45 +541,45 @@ h1, h2, h3, h4, h5, h6, p, nav {
       margin-left: -80px;
       margin-top: -13px; }
     #about-nav .nav-container .nav-img1 {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav1.png) no-repeat;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav1.png) no-repeat;
-      background-size: cover;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav1.png) -10px center no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav1.png) -10px center no-repeat;
+      background-size: 140%;
       height: 200px;
       width: 200px;
+      -webkit-transition: 500ms;
+      transition: 500ms;
       border-radius: 50%;
-      -webkit-transition: 300ms;
-      transition: 300ms;
-      border: 3px solid white; }
+      border: 3px solid transparent; }
     #about-nav .nav-container .nav-img2 {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav2.png) no-repeat;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav2.png) no-repeat;
-      background-size: cover;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav2.png) center center no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav2.png) center center no-repeat;
+      background-size: 110%;
       height: 200px;
       width: 200px;
       border-radius: 50%;
-      -webkit-transition: 300ms;
-      transition: 300ms;
-      border: 3px solid white; }
+      -webkit-transition: 500ms;
+      transition: 500ms;
+      border: 3px solid transparent; }
     #about-nav .nav-container .nav-img3 {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav3.png) no-repeat;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav3.png) no-repeat;
-      background-size: cover;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav3.png) center center no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav3.png) center center no-repeat;
+      background-size: 170%;
       height: 200px;
       width: 200px;
       border-radius: 50%;
-      -webkit-transition: 300ms;
-      transition: 300ms;
-      border: 3px solid white; }
+      -webkit-transition: 500ms;
+      transition: 500ms;
+      border: 3px solid transparent; }
     #about-nav .nav-container .nav-img4 {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav4.png) no-repeat;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav4.png) no-repeat;
-      background-size: cover;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav4.png) center center no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav4.png) center center no-repeat;
+      background-size: 110%;
       height: 200px;
       width: 200px;
       border-radius: 50%;
-      -webkit-transition: 300ms;
-      transition: 300ms;
-      border: 3px solid white; }
+      -webkit-transition: 500ms;
+      transition: 500ms;
+      border: 3px solid transparent; }
 
 #footer {
   background-color: #080808; }
