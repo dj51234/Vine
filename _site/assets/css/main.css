@@ -496,9 +496,41 @@ h1, h2, h3, h4, h5, h6, p, nav {
       height: 200px;
       width: 200px;
       position: relative; }
-      #about-nav .nav-container a:hover .nav-img {
+      #about-nav .nav-container a:hover .nav-img1 {
+        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav1.png) no-repeat;
+        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav1.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid white; }
+      #about-nav .nav-container a:hover .nav-img2 {
         background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav2.png) no-repeat;
         background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav2.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid white; }
+      #about-nav .nav-container a:hover .nav-img3 {
+        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav3.png) no-repeat;
+        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav3.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid white; }
+      #about-nav .nav-container a:hover .nav-img4 {
+        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav4.png) no-repeat;
+        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav4.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid white; }
+      #about-nav .nav-container a:hover .nav-img5 {
+        background: -webkit-linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav5.png) no-repeat;
+        background: linear-gradient(rgba(113, 20, 20, 0.87), rgba(113, 20, 20, 0.87)), url(../img/bottomnav5.png) no-repeat;
         background-size: cover;
         height: 200px;
         width: 200px;
@@ -550,8 +582,6 @@ h1, h2, h3, h4, h5, h6, p, nav {
       -webkit-transition: 300ms;
       transition: 300ms;
       border: 3px solid white; }
-      #about-nav .nav-container .nav-img2 span {
-        margin-left: -65px; }
     #about-nav .nav-container .nav-img3 {
       background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav3.png) no-repeat;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bottomnav3.png) no-repeat;
