@@ -1,0 +1,65 @@
+#header
+
+	.nav-top-wrap
+		max-width: 100%
+
+	.nav-top
+		height: 69px
+		background-color: #080808
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0 150px
+
+		.logo
+			background: url(../img/logo1.png)
+			background-size: contain
+			width: 165px
+			height: 69px
+
+		a
+			display: inline-block
+			font-size: 40px
+			color: white
+
+	.nav-side-wrap
+		height: 90vh
+		width: 250px
+		background-color: #080808
+		float: right
+		+transition(500ms)
+		transform: translateX(100%)
+		
+
+
+
+		&.open
+			transform: translateX(0%)
+
+		.nav-side
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			height: 360px
+			line-height: 20px
+
+			a
+				font-size: 24px
+				text-transform: uppercase
+				text-decoration: none
+				color: white
+				margin: 0
+				display: inline-block
+				padding: 15px 30px 10px
+				+transition()
+
+				&:hover
+					background-color: #9c141a
+
+				&:hover span
+					opacity: 1
+
+			span
+				font-size: 12px
+				opacity: 0
+				+transition()

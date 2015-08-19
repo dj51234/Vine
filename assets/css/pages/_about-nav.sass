@@ -1,0 +1,84 @@
+#about-nav
+   background-color: #080808
+   clear: both
+
+   .nav-container
+      display: flex
+      justify-content: space-around
+      padding: 100px 0
+      
+
+
+      a
+         display: inline-block
+         +size(200px)
+         position: relative
+
+         &:hover .nav-img
+            background: linear-gradient(rgba(113,20,20,0.87),rgba(113,20,20,0.87)),url(../img/bottomnav2.png) no-repeat
+            background-size: cover
+            +size(200px)
+            border-radius: 50%
+            border: 3px solid white
+
+         &:hover span
+            transform: scale(1.05)
+
+         span
+            +position(absolute, 50% null null 50%)
+            display: inline-block
+            font-size: 20px
+            font-weight: 800
+            color: white
+            +transition()
+
+      .nav-title1
+         margin-left: -50px
+         margin-top: -13px
+
+      .nav-title2
+         margin-left: -60px
+         margin-top: -13px
+
+      .nav-title3
+         margin-left: -68px
+         margin-top: -13px
+
+      .nav-title4
+         margin-left: -80px
+         margin-top: -13px
+
+      .nav-img1
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/bottomnav1.png) no-repeat
+         background-size: cover
+         +size(200px)
+         border-radius: 50%
+         +transition(300ms)
+         border: 3px solid white
+
+      .nav-img2
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/bottomnav2.png) no-repeat
+         background-size: cover
+         +size(200px)
+         border-radius: 50%
+         +transition(300ms)
+         border: 3px solid white
+
+         span
+            margin-left: -65px
+
+      .nav-img3
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/bottomnav3.png) no-repeat
+         background-size: cover
+         +size(200px)
+         border-radius: 50%
+         +transition(300ms)
+         border: 3px solid white
+
+      .nav-img4
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/bottomnav4.png) no-repeat
+         background-size: cover
+         +size(200px)
+         border-radius: 50%
+         +transition(300ms)
+         border: 3px solid white
