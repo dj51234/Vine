@@ -1,0 +1,135 @@
+#people
+   background-color: #080808
+   color: white
+   text-align: center
+
+   .logo
+      background: url(../img/logo1.png)
+      background-size: contain
+      width: 165px
+      height: 69px
+      margin: 150px auto 0
+
+   p
+      margin-top: 20px
+
+   hr
+      background-color: red
+      border: none
+      height: 1px
+      width: 1200px
+      opacity: .15
+      margin: 50px auto 75px
+
+   .top-title
+      background: url(../img/people-img.png) center center no-repeat
+      background-size: 100%
+      height: 315px
+      max-width: 100%
+      margin: 0 auto
+      text-align: center
+      position: relative
+
+      .circle
+         +size(391px)
+         border-radius: 50%
+         border: 3px solid white
+         +position(absolute, 20px 50% null null)
+         margin-right: -190px
+
+      h1
+         color: white
+         font-size: 40px
+         padding-top: 175px
+
+   .head-office
+      margin: 100px 0
+
+   .property-accounts
+         margin: 100px 0
+
+   .peoples
+      max-width: 1200px
+      margin: 0 auto
+
+   .people-units
+      display: flex
+      width: 1200px
+      align-items: center
+      justify-content: space-around
+
+      .people-unit
+            display: flex
+            width: 230px
+            position: relative
+
+            .info
+               margin-top: -5px
+               display: flex
+               flex-direction: column
+               justify-content: space-between
+               line-height: 30px
+               padding-left: 10px
+               pointer-events: none
+
+               p
+                  padding: 10px
+                  +position(absolute, -100% null null 0%)
+                  width: 280px
+                  margin: 0
+                  font-size: 12px
+                  line-height: 16px
+                  background-color: #9c141a
+                  +transition(400ms)
+                  border-radius: 5px
+                  opacity: 0
+                  pointer-events: none
+                  transform: rotate(25deg)
+                  border: 2px solid white
+
+                  span
+                     +size(10px)
+                     background-color: #9c141a
+                     +position(absolute, null null -7% 5%)
+                     transform: rotate(45deg)
+                     border-right: 2px solid white
+                     border-bottom: 2px solid white
+
+
+
+               a
+                  color: white
+                  pointer-events: auto
+                  display: inline-block
+                  width: 22.5px
+                  margin: 0 auto
+
+                  &:hover
+                     color: #9c141a
+
+               .ion-ios-email
+                  font-size: 30px
+                  display: inline-block
+
+
+               h3, h4, h5
+                  font-weight: 600
+
+               h4, h5
+                  font-style: italic
+
+      .face
+         width: 80px
+         height: 105px
+         background: url(../img/1.png)
+         background-size: contain
+         border: 2px solid white
+         cursor: pointer
+
+
+   .title
+
+      h2
+         font-weight: 500
+         text-transform: uppercase
+         margin: 50px 0

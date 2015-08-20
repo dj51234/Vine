@@ -1,0 +1,294 @@
+#aboutUs
+   background-color: #080808
+   color: white
+
+   hr
+      background-color: red
+      border: none
+      height: 1px
+      width: 1200px
+      opacity: .15
+      margin: 150px auto 75px
+
+   .top-title
+      background: url(../img/about-image.png) center center no-repeat
+      background-size: 100%
+      height: 315px
+      max-width: 100%
+      margin: 0 auto
+      text-align: center
+      position: relative
+
+      .circle
+         +size(391px)
+         border-radius: 50%
+         border: 3px solid white
+         +position(absolute, 20px 50% null null)
+         margin-right: -190px
+
+      h1
+         color: white
+         font-size: 40px
+         padding-top: 175px
+
+   .about-blurbs
+      display: flex
+      align-items: top
+      justify-content: space-around
+      max-width: 1200px
+      margin: 200px auto 0
+      padding: 0 50px
+
+      .underline
+         padding-bottom: 10px
+
+      .blurb1,.blurb2,.blurb3
+         padding: 0 20px
+
+      .blurb1
+         .underline
+            background: url(../img/focus-underline.png) no-repeat
+            width: 155px
+            height: 3px
+
+      .blurb2
+         .underline
+            background: url(../img/history-underline.png) no-repeat
+            width: 179px
+            height: 3px
+
+      .blurb3
+         .underline
+            background: url(../img/experience-underline.png) no-repeat
+            width: 162px
+            height: 3px
+
+      h3
+         padding-bottom: 5px
+         font-size: 24px
+
+      .strawberry
+         display: inline-block
+         +size(18px)
+         background: url(../img/strawberry.png) no-repeat
+         background-size: cover
+         margin: 0 5px -2px 0
+
+      .cherry
+         display: inline-block
+         width: 18px
+         height: 24px
+         background: url(../img/cherry.png) no-repeat
+         background-size: cover
+         margin: 0 5px -5px 0
+
+      .apple
+         display: inline-block
+         width: 17px
+         height: 20px
+         background: url(../img/apple.png) no-repeat
+         background-size: cover
+         margin: 0 5px -2px 0
+
+   .whyvine
+      max-width: 1200px
+      margin: 0 auto
+      text-align: center
+      margin: 0 auto
+
+      .underline
+         background: url(../img/whyvine-underline.png) no-repeat
+         width: 123px
+         height: 3px
+         margin: 0 auto
+
+      h3
+         font-size: 24px
+
+      p
+         padding-top: 20px
+         max-width: 750px
+         margin: 0 auto
+         line-height: 29px
+
+   .whyvine-units
+      max-width: 1200px
+      margin: 0 auto
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+
+      .whyvine-unit
+         width: 295px
+         height: 230px
+         margin: 100px 20px 50px
+         border: 2px solid white
+         position: relative
+         background-size: cover
+         overflow: hidden
+         cursor: pointer
+
+
+         &:hover .overlay
+            transform: translateY(0%)
+
+         &:hover .unit-icon
+            transform: translateY(-110%)
+
+         .overlay
+            +position(absolute, 0 0 0 0)
+            background-color: fade-out(red,.2)
+            transform: translateY(100%)
+            +transition()
+            text-align: center
+            padding: 60px 10px 10px 10px
+            font-size: 14px
+
+         .unit-title
+            color: white
+            +position(absolute, null null 0 0)
+            background-color: #080808
+            width: 100%
+            height: 30px
+
+         h5
+            +position(absolute, null null 0 50%)
+            line-height: 30px
+            font-weight: 300
+            font-size: 14px
+
+      .whyvine-unit1
+         background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/whyvine1.png) no-repeat
+         width: 295px
+         height: 230px
+         margin: 100px 20px 50px
+         border: 2px solid white
+         position: relative
+         background-size: cover
+         overflow: hidden
+         cursor: pointer
+
+         .unit-icon
+            color: white
+            display: inline-block
+            background: none
+            font-size: 55px
+            +position(absolute, 50% 50% null null)
+            margin-right: -27px
+            margin-top: -37px
+            transform: translateY(0%)
+            +transition()
+            z-index: 1
+
+         h5
+            margin-left: -67px
+
+      .whyvine-unit2
+         background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/whyvine2.png) no-repeat
+         width: 295px
+         height: 230px
+         margin: 100px 20px 50px
+         border: 2px solid white
+         position: relative
+         background-size: cover
+         overflow: hidden
+         cursor: pointer
+
+         .unit-icon
+            color: white
+            display: inline-block
+            background: none
+            font-size: 55px
+            +position(absolute, 50% 50% null null)
+            margin-right: -24px
+            margin-top: -41px
+            transform: translateY(0%)
+            +transition()
+            z-index: 1
+
+         h5
+            margin-left: -66px
+
+      .whyvine-unit3
+         background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/whyvine3.png) no-repeat
+         width: 295px
+         height: 230px
+         margin: 100px 20px 50px
+         border: 2px solid white
+         position: relative
+         background-size: cover
+         overflow: hidden
+         cursor: pointer
+
+         &:hover .unit-icon
+            transform: translateY(-115%)
+
+         .unit-icon
+            color: white
+            display: inline-block
+            background: none
+            font-size: 55px
+            +position(absolute, 50% 50% null null)
+            margin-right: -23px
+            margin-top: -37px
+            transform: translateY(0%)
+            +transition()
+            z-index: 1
+
+         h5
+            margin-left: -31.5px
+
+      .whyvine-unit4
+         background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/whyvine4.png) no-repeat
+         width: 295px
+         height: 230px
+         margin: 100px 20px 50px
+         border: 2px solid white
+         position: relative
+         background-size: cover
+         overflow: hidden
+         cursor: pointer
+
+         &:hover .unit-icon
+            transform: translateY(-115%)
+
+         .unit-icon
+            color: white
+            display: inline-block
+            background: none
+            font-size: 55px
+            +position(absolute, 50% 50% null null)
+            margin-right: -20px
+            margin-top: -37px
+            transform: translateY(0%)
+            +transition()
+            z-index: 1
+
+         h5
+            margin-left: -56px
+
+      .whyvine-unit5
+         background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/whyvine5.png) no-repeat
+         width: 295px
+         height: 230px
+         margin: 100px 20px 50px
+         border: 2px solid white
+         position: relative
+         background-size: cover
+         overflow: hidden
+         cursor: pointer
+
+         .unit-icon
+            color: white
+            display: inline-block
+            background: none
+            font-size: 55px
+            +position(absolute, 50% 50% null null)
+            margin-right: -24px
+            margin-top: -37px
+            transform: translateY(0%)
+            +transition()
+            z-index: 1
+
+         h5
+            margin-left: -55px

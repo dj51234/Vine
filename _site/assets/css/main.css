@@ -355,7 +355,8 @@ th {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #080808; }
 
 h1, h2, h3, h4, h5, h6, p, nav {
   margin: 0;
@@ -394,12 +395,14 @@ h1, h2, h3, h4, h5, h6, p, nav {
   height: 90vh;
   width: 250px;
   background-color: #080808;
-  float: right;
+  position: absolute;
+  right: 0;
   -webkit-transition: 500ms;
   transition: 500ms;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
-          transform: translateX(100%); }
+          transform: translateX(100%);
+  z-index: 1; }
   #header .nav-side-wrap.open {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
@@ -581,6 +584,466 @@ h1, h2, h3, h4, h5, h6, p, nav {
       transition: 500ms;
       border: 3px solid transparent; }
 
+#aboutUs {
+  background-color: #080808;
+  color: white; }
+  #aboutUs hr {
+    background-color: red;
+    border: none;
+    height: 1px;
+    width: 1200px;
+    opacity: .15;
+    margin: 150px auto 75px; }
+  #aboutUs .top-title {
+    background: url(../img/about-image.png) center center no-repeat;
+    background-size: 100%;
+    height: 315px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; }
+    #aboutUs .top-title .circle {
+      height: 391px;
+      width: 391px;
+      border-radius: 50%;
+      border: 3px solid white;
+      position: absolute;
+      top: 20px;
+      right: 50%;
+      margin-right: -190px; }
+    #aboutUs .top-title h1 {
+      color: white;
+      font-size: 40px;
+      padding-top: 175px; }
+  #aboutUs .about-blurbs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: top;
+    -webkit-align-items: top;
+        -ms-flex-align: top;
+            align-items: top;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    max-width: 1200px;
+    margin: 200px auto 0;
+    padding: 0 50px; }
+    #aboutUs .about-blurbs .underline {
+      padding-bottom: 10px; }
+    #aboutUs .about-blurbs .blurb1, #aboutUs .about-blurbs .blurb2, #aboutUs .about-blurbs .blurb3 {
+      padding: 0 20px; }
+    #aboutUs .about-blurbs .blurb1 .underline {
+      background: url(../img/focus-underline.png) no-repeat;
+      width: 155px;
+      height: 3px; }
+    #aboutUs .about-blurbs .blurb2 .underline {
+      background: url(../img/history-underline.png) no-repeat;
+      width: 179px;
+      height: 3px; }
+    #aboutUs .about-blurbs .blurb3 .underline {
+      background: url(../img/experience-underline.png) no-repeat;
+      width: 162px;
+      height: 3px; }
+    #aboutUs .about-blurbs h3 {
+      padding-bottom: 5px;
+      font-size: 24px; }
+    #aboutUs .about-blurbs .strawberry {
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      background: url(../img/strawberry.png) no-repeat;
+      background-size: cover;
+      margin: 0 5px -2px 0; }
+    #aboutUs .about-blurbs .cherry {
+      display: inline-block;
+      width: 18px;
+      height: 24px;
+      background: url(../img/cherry.png) no-repeat;
+      background-size: cover;
+      margin: 0 5px -5px 0; }
+    #aboutUs .about-blurbs .apple {
+      display: inline-block;
+      width: 17px;
+      height: 20px;
+      background: url(../img/apple.png) no-repeat;
+      background-size: cover;
+      margin: 0 5px -2px 0; }
+  #aboutUs .whyvine {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto; }
+    #aboutUs .whyvine .underline {
+      background: url(../img/whyvine-underline.png) no-repeat;
+      width: 123px;
+      height: 3px;
+      margin: 0 auto; }
+    #aboutUs .whyvine h3 {
+      font-size: 24px; }
+    #aboutUs .whyvine p {
+      padding-top: 20px;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 29px; }
+  #aboutUs .whyvine-units {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #aboutUs .whyvine-units .whyvine-unit {
+      width: 295px;
+      height: 230px;
+      margin: 100px 20px 50px;
+      border: 2px solid white;
+      position: relative;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer; }
+      #aboutUs .whyvine-units .whyvine-unit:hover .overlay {
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%); }
+      #aboutUs .whyvine-units .whyvine-unit:hover .unit-icon {
+        -webkit-transform: translateY(-110%);
+            -ms-transform: translateY(-110%);
+                transform: translateY(-110%); }
+      #aboutUs .whyvine-units .whyvine-unit .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 0, 0, 0.8);
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        text-align: center;
+        padding: 60px 10px 10px 10px;
+        font-size: 14px; }
+      #aboutUs .whyvine-units .whyvine-unit .unit-title {
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #080808;
+        width: 100%;
+        height: 30px; }
+      #aboutUs .whyvine-units .whyvine-unit h5 {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 14px; }
+    #aboutUs .whyvine-units .whyvine-unit1 {
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine1.png) no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine1.png) no-repeat;
+      width: 295px;
+      height: 230px;
+      margin: 100px 20px 50px;
+      border: 2px solid white;
+      position: relative;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer; }
+      #aboutUs .whyvine-units .whyvine-unit1 .unit-icon {
+        color: white;
+        display: inline-block;
+        background: none;
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -27px;
+        margin-top: -37px;
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        z-index: 1; }
+      #aboutUs .whyvine-units .whyvine-unit1 h5 {
+        margin-left: -67px; }
+    #aboutUs .whyvine-units .whyvine-unit2 {
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine2.png) no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine2.png) no-repeat;
+      width: 295px;
+      height: 230px;
+      margin: 100px 20px 50px;
+      border: 2px solid white;
+      position: relative;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer; }
+      #aboutUs .whyvine-units .whyvine-unit2 .unit-icon {
+        color: white;
+        display: inline-block;
+        background: none;
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -24px;
+        margin-top: -41px;
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        z-index: 1; }
+      #aboutUs .whyvine-units .whyvine-unit2 h5 {
+        margin-left: -66px; }
+    #aboutUs .whyvine-units .whyvine-unit3 {
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine3.png) no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine3.png) no-repeat;
+      width: 295px;
+      height: 230px;
+      margin: 100px 20px 50px;
+      border: 2px solid white;
+      position: relative;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer; }
+      #aboutUs .whyvine-units .whyvine-unit3:hover .unit-icon {
+        -webkit-transform: translateY(-115%);
+            -ms-transform: translateY(-115%);
+                transform: translateY(-115%); }
+      #aboutUs .whyvine-units .whyvine-unit3 .unit-icon {
+        color: white;
+        display: inline-block;
+        background: none;
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -23px;
+        margin-top: -37px;
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        z-index: 1; }
+      #aboutUs .whyvine-units .whyvine-unit3 h5 {
+        margin-left: -31.5px; }
+    #aboutUs .whyvine-units .whyvine-unit4 {
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine4.png) no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine4.png) no-repeat;
+      width: 295px;
+      height: 230px;
+      margin: 100px 20px 50px;
+      border: 2px solid white;
+      position: relative;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer; }
+      #aboutUs .whyvine-units .whyvine-unit4:hover .unit-icon {
+        -webkit-transform: translateY(-115%);
+            -ms-transform: translateY(-115%);
+                transform: translateY(-115%); }
+      #aboutUs .whyvine-units .whyvine-unit4 .unit-icon {
+        color: white;
+        display: inline-block;
+        background: none;
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -20px;
+        margin-top: -37px;
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        z-index: 1; }
+      #aboutUs .whyvine-units .whyvine-unit4 h5 {
+        margin-left: -56px; }
+    #aboutUs .whyvine-units .whyvine-unit5 {
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine5.png) no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/whyvine5.png) no-repeat;
+      width: 295px;
+      height: 230px;
+      margin: 100px 20px 50px;
+      border: 2px solid white;
+      position: relative;
+      background-size: cover;
+      overflow: hidden;
+      cursor: pointer; }
+      #aboutUs .whyvine-units .whyvine-unit5 .unit-icon {
+        color: white;
+        display: inline-block;
+        background: none;
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -24px;
+        margin-top: -37px;
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        z-index: 1; }
+      #aboutUs .whyvine-units .whyvine-unit5 h5 {
+        margin-left: -55px; }
+
+#people {
+  background-color: #080808;
+  color: white;
+  text-align: center; }
+  #people .logo {
+    background: url(../img/logo1.png);
+    background-size: contain;
+    width: 165px;
+    height: 69px;
+    margin: 150px auto 0; }
+  #people p {
+    margin-top: 20px; }
+  #people hr {
+    background-color: red;
+    border: none;
+    height: 1px;
+    width: 1200px;
+    opacity: .15;
+    margin: 50px auto 75px; }
+  #people .top-title {
+    background: url(../img/people-img.png) center center no-repeat;
+    background-size: 100%;
+    height: 315px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; }
+    #people .top-title .circle {
+      height: 391px;
+      width: 391px;
+      border-radius: 50%;
+      border: 3px solid white;
+      position: absolute;
+      top: 20px;
+      right: 50%;
+      margin-right: -190px; }
+    #people .top-title h1 {
+      color: white;
+      font-size: 40px;
+      padding-top: 175px; }
+  #people .head-office {
+    margin: 100px 0; }
+  #people .property-accounts {
+    margin: 100px 0; }
+  #people .peoples {
+    max-width: 1200px;
+    margin: 0 auto; }
+  #people .people-units {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #people .people-units .people-unit {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 230px;
+      position: relative; }
+      #people .people-units .people-unit .info {
+        margin-top: -5px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        line-height: 30px;
+        padding-left: 10px;
+        pointer-events: none; }
+        #people .people-units .people-unit .info p {
+          padding: 10px;
+          position: absolute;
+          top: -100%;
+          left: 0%;
+          width: 280px;
+          margin: 0;
+          font-size: 12px;
+          line-height: 16px;
+          background-color: #9c141a;
+          -webkit-transition: 400ms;
+          transition: 400ms;
+          border-radius: 5px;
+          opacity: 0;
+          pointer-events: none;
+          -webkit-transform: rotate(25deg);
+              -ms-transform: rotate(25deg);
+                  transform: rotate(25deg);
+          border: 2px solid white; }
+          #people .people-units .people-unit .info p span {
+            height: 10px;
+            width: 10px;
+            background-color: #9c141a;
+            position: absolute;
+            bottom: -7%;
+            left: 5%;
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            border-right: 2px solid white;
+            border-bottom: 2px solid white; }
+        #people .people-units .people-unit .info a {
+          color: white;
+          pointer-events: auto;
+          display: inline-block;
+          width: 22.5px;
+          margin: 0 auto; }
+          #people .people-units .people-unit .info a:hover {
+            color: #9c141a; }
+        #people .people-units .people-unit .info .ion-ios-email {
+          font-size: 30px;
+          display: inline-block; }
+        #people .people-units .people-unit .info h3, #people .people-units .people-unit .info h4, #people .people-units .people-unit .info h5 {
+          font-weight: 600; }
+        #people .people-units .people-unit .info h4, #people .people-units .people-unit .info h5 {
+          font-style: italic; }
+    #people .people-units .face {
+      width: 80px;
+      height: 105px;
+      background: url(../img/1.png);
+      background-size: contain;
+      border: 2px solid white;
+      cursor: pointer; }
+  #people .title h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 50px 0; }
+
 #mapsect {
   background-color: #D31921; }
   #mapsect .wrap {
@@ -598,7 +1061,8 @@ h1, h2, h3, h4, h5, h6, p, nav {
     height: 1px;
     border: none;
     margin: 0;
-    opacity: .1; }
+    opacity: .1;
+    margin-top: 100px; }
   #footer .footer-wrap {
     display: -webkit-box;
     display: -webkit-flex;
